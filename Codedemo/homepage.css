@@ -1,0 +1,239 @@
+.all{
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 1000px;
+    background-size: cover;
+    object-fit: fill;
+}
+.all .main{
+    position: relative;
+    top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 800px;
+    border: 3px solid black;
+    border-radius: 50px;
+}
+
+.all .main .slideshow{
+    width: 95%;
+    height: 400px;
+    margin: 30px auto;
+    border-radius: 50px;
+    border: 3px solid black;
+    overflow: hidden;
+    
+}
+.all .main .slideshow .slideshow1{
+    width: 4470px;
+    -webkit-animation: slide 14s ease infinite;
+}
+
+@keyframes slide{
+    20% {margin-left: 0px;}
+    30% {margin-left: -1490px;}
+    50% {margin-left: -1490px;}
+    60% {margin-left: -2980px;}
+    80% {margin-left: -2980px;}
+}
+
+ .slide1{
+    float: left;
+    width: 1490px;
+    height: 400px;
+    background-color: red;
+}
+.slide2{
+    float: left;
+    width: 1490px;
+    height: 400px;
+    background-color: yellow;
+}
+.slide3{
+    float: left;
+    width: 1490px;
+    height: 400px;
+    background-color: green;
+}
+
+.all .main .content{
+    width: 95%;
+    min-height: 1000px;
+    margin: 0px auto 20px auto;
+    border-radius: 50px;
+    border: 3px solid black;
+    position: relative;
+    display: block;
+}
+
+.all .main .content .content-tittle{
+    width: 700px;
+    position: relative;
+    display: block;
+    height: 150px;
+    margin: -60px auto;
+    border: 3px solid black;
+    font-size: 30px;
+    text-align: center;
+    line-height: 150px;
+    z-index: 10;
+    background-color: aliceblue;
+    border-radius: 50px;
+}
+.all .main .content .all-content{
+    width: 95%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    height: 350px;
+    margin: 0px auto 0px auto;
+    border: 3px solid black;
+    border-radius: 50px;
+    background-color: aqua;
+}
+
+.all .main .content .all-content .contenti{
+    display: block;
+    position: relative;
+    width: 30%;
+    z-index: 15;
+    background-color: gray;
+    height: 250px;
+    border: 3px solid black;
+    margin: 20px auto;
+    border-radius: 50px;
+}
+.all .main .content .all-content .xemthem{
+    display: block;
+    position: relative;
+    width: 30%;
+    height: 80px;
+    border: 3px solid black;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 80px;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: aliceblue;
+    z-index: 10;
+    margin: 10px auto auto auto;
+}
+.xemthem:hover{
+    opacity: 1.3;
+}
+.xemthem:active{
+    background-color: gray !important;
+}
+
+.all .main .content .event-about{
+    display: block;
+    position: relative;
+    width: 95%;
+    min-height: 500px;
+    border: 3px solid black;
+    margin: 50px auto 70px auto;
+    border-radius: 50px;
+
+}
+.all .main .content .event-about .event-tittle,
+.all .main .content .event-about .about-tittle{
+    position: absolute;
+    width: 250px;
+    height: 150px;
+    border: 3px solid black;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 150px;
+    font-size: 30px;
+    z-index: 5;
+}
+.all .main .content .event-about .event-tittle{
+    display: block;
+    margin-top: -40px;
+    margin-left: -30px;
+    background-color: aliceblue;
+}
+.all .main .content .event-about .about-tittle{
+    margin-top: 400px;
+    display: block;
+    margin-left: 1190px;
+    background-color: aliceblue;
+}
+
+.all .main .content .event-about .event-about-content{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    border-radius: 50px;
+    height: 500px;
+    overflow: hidden;
+}
+.event-about-content .event-content{
+    display: block;
+    position: relative;
+    height: 500px;
+    width: 50%;
+    overflow: scroll;
+    z-index: 1;
+    margin: auto;
+    background-color: aqua;
+    scrollbar-width: none;
+}
+.event-about-content .event-content h1{
+    text-wrap: wrap;
+    margin: 300px 20px 0px 20px;
+}
+.event-about-content .event-content p{
+    text-wrap: wrap;
+    margin: 0px 20px 40px 20px;
+}
+.event-about-content .cline{
+    display: block;
+    height: 470px;
+    border: 3px solid black;
+    margin: auto;
+}
+.event-about-content .about-content{
+    display: block;
+    position: relative;
+    height: 500px;
+    width: 50%;
+    overflow: scroll;
+    z-index: 1;
+    margin: auto;
+    background-color: aqua;
+    scrollbar-width: none;
+}
+
+.about-content .nd-about-content{
+    display: block;
+    width: 89%;
+    padding: 4%;
+    min-height: 300px;
+    margin: 20px auto 0px auto;
+    border: 3px solid black;
+    border-radius: 50px;
+}
+.about-content .ChiTiet{
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    border: 3px solid black;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 40px;
+    background-color: aliceblue;
+    margin: 350px 260px ;
+    cursor: pointer;
+}
+
+button.ChiTiet:focus{
+    margin-top: 900px;
+}
+button.ChiTiet:focus ~ .nd-about-content{
+    min-height: 850px;
+}
