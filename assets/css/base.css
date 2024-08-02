@@ -97,7 +97,8 @@ ol, ul {
 }
 
 .slide-show {
-    width: 1000px;
+    width: 1600px;
+    height: 1000px;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
@@ -108,11 +109,9 @@ ol, ul {
     transition: all 0.7s ease;
 }
 
-.slide__img {
-    width: 1000px;
-    height: 800px;
-    object-fit: cover;
-}
+/* .slide__img {
+    max-width: 100%;
+} */
 
 .btn {
     display: flex;
