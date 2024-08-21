@@ -34,6 +34,8 @@ ol, ul {
 }
 
 .header {
+    display: flex;
+    flex-wrap: wrap;
     background-color: #fff;
 }
 
@@ -47,12 +49,23 @@ ol, ul {
 
 .logo {
     display: flex;
+    margin: 5px 0 5px;
 }
 
 .logo--text {
     position: relative;
     padding: 14px 0px;
-    padding-left: 16px;
+    padding-left: 10px;
+}
+@media (max-width: 840px){
+    .navbar{display: none;}
+    .logo{
+        align-items: center;
+        margin: auto;
+    }
+    .logo--text {
+        font-size: 12px;
+    }
 }
 
 .navbar__list {
@@ -97,7 +110,7 @@ ol, ul {
 }
 
 .slide-show {
-    width: 1000px;
+    width: 80%;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
@@ -109,17 +122,28 @@ ol, ul {
 }
 
 .slide__img {
-    width: 1000px;
-    height: 800px;
+    width: 100%;
+    height: 900px;
     object-fit: cover;
+    
 }
+@media (max-width: 1400px)
+{
+    .slide__img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+        
+    }
+}
+
 
 .btn {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
-    font-size: 40px;
+    height: 20%;
+    font-size: 100%;
     color: #ccc;
     position: absolute;
     top: 50%;
@@ -152,7 +176,7 @@ ol, ul {
 
 .index-item {
     border: 2px solid #ccc;
-    padding: 12px;
+    padding: 10%;
     margin: 5px;
     border-radius: 50%;
 }
@@ -178,29 +202,32 @@ ol, ul {
 .text--decor {
     border: 1px solid #0c0c0c;
     position: relative;
-    width: 280px;
+    width: 30%;
     height: 1px;
     margin: 0 auto;
     top: -10px;
 }
 
 .news--img {
-    width: 560px;
-    height: 300px;
+    width: 100%;
+    height: 250px;
     object-fit: cover;
 }
 
 .news__item {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: auto;
 }
 
 .box-news {
-    width: 560px;
-    height: 382px;
+    width: 425px;
+    height: 350px;
     padding: 20px;
+    margin: auto;
     background-color: #fff;
+    margin-bottom: 60px;
 }
 
 .news--link h4{
@@ -239,17 +266,21 @@ ol, ul {
     padding: 4px;
 }
 
+.body--intro{
+    display: flex;
+    flex-wrap: wrap ;
+    width: 70%;
+}
 .body__event {
     margin-top: 40px;
-    width: 600px;
+    width: 100%;
     display: flex;
 }
 
 .text--box__intro {
     position: absolute;
     opacity: 0.9;
-    width: 580px;
-    height: 52px;
+    width: 100%;
     background-color: #fff;
     bottom: 0px;
     z-index: 1;
@@ -257,11 +288,11 @@ ol, ul {
 
 .btn--body__event {
     position: relative;
-    bottom: -12px;
-    left: 112px;
+    bottom: -20px;
+    font-size: 20px;
+    margin-left: 270px;
     width: 160px;
     height: 40px;
-    margin: 8px auto;
     padding: 8px;
     text-align: center;
     border: 1px solid #ccc;
@@ -271,16 +302,46 @@ ol, ul {
 
 .body__intro {
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .event__item {
-    width: 580px;
-    margin-right: 20px;
+    display: block;
+    flex-grow: 1;
+    margin: auto;
+}
+@media (max-width:1400px){
+    .box__event {
+        width: 100%;
+        height: 100%;
+        background-color: #333333;
+        overflow: hidden;
+        position: relative;
+    }
+    .body--intro{
+        display: flex;
+        flex-wrap: wrap ;
+        width: 95%;
+    }
+    .btn--body__event {
+        margin: 0;
+        flex-grow: 1;
+        font-size: 17px;
+        
+    }
+    .text--body__news{
+        font-size: 25px;
+    }
+    .text--body__intro{
+        text-align: center;
+    }
 }
 
 .intro__item {
-    width: 580px;
-    height: 400px;
+    display: block;
+    margin: auto;
+    flex-grow: 1;
     background-color: #fff;
 }
 
@@ -289,10 +350,10 @@ ol, ul {
     border-radius: 12px;
     margin: 0 auto;
     padding: 16px;
-    width: 500px;
-    height: 280px;
+    max-width: 500px;
+    min-height: 290px;
     background-color: #ccc;
-    text-align: justify;
+    
 }
 
 .text--body__intro {
@@ -322,19 +383,25 @@ ol, ul {
 
 .footer {
     background-color: #fff;
-    height: 160px;
+    min-height: 160px;
+
 }
 
 .footer--content {
     max-width: 1200px;
     padding-top: 30px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
+    margin:auto;
 }
 
 .connect {
     display: flex;
     padding: 2px 0px;
+}
+
+.footer__contact, .footer__connect{
+    margin: 10px;
 }

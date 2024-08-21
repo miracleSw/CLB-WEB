@@ -121,3 +121,13 @@ input.tab3:checked ~ .rightbar .CacHoatDong{
     z-index: 100 !important;
 }
 
+
+.picture{
+    display: block;
+    width: 95%;
+    margin: 20px auto 20px auto;
+    background-image: url("../assets/images/fullclb.jpg");
+    background-size: cover;
+    height: 600px;
+    background-position: center;
+}
