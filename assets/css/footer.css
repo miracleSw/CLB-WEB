@@ -1,0 +1,31 @@
+.all .footer{
+    width: 100%;
+    position: relative;
+    min-height: 200px;
+    border: 3px solid black;
+    border-radius: 50px;
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+ .all .footer .logocntt,
+ .all .footer .contract,
+ .all .footer .ttlh{
+    display: block;
+    margin: auto;
+    width: 300px;
+    height: 90px;
+    border: 3px solid black;
+    border-radius: 50px;
+ }
+ .all .footer .line{
+    width: 90%;
+    margin: 0px auto auto auto;
+    border: 5px solid gray;
+ }
+ .all .footer .copyright{
+    display: block;
+    width: 90%;
+    margin: 0px auto auto auto;
+    font-size: 30px;
+ }
