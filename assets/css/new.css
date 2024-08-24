@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: Arial;
+}
+.contentnew{
+    width: auto;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+.contentnew__navbar{
+    width: auto;
+    height: 350px;
+    margin-left: 15px;
+    margin-right: 25px;
+    border: 3px solid rgb(181, 179, 179);
+    padding-top: 20px;
+    border-radius: 15px;
+}
+.contentnew__navbar h3{
+    padding: 20px;
+    border: 1px solid rgb(170, 88, 88);
+    border-radius: 15px;
+    height: auto;
+    width: 140px;
+    margin-bottom: 10px;
+}
+.contentnew__navbar__inf{
+    padding: 10px;
+  
+    border-radius: 15px;
+    width: 165px;
+}
+.contentnew__navbar__inf__event h3{
+    width: 115px;
+}
+.contentnew__navbar__inf__event{
+    height: 300px;
+    width: 140px;
+   
+    padding: 10px;
+    border-radius: 15px;
+}
+.contentnew__content{
+    width: 85%;
+    height: auto;
+}
+.contentnew__content__posts{
+    width: auto;
+    height: auto;
+    display: flex;
+}
+.contentnew__content__posts__main{
+    width: 70%;
+    height: auto;
+    background-color: white;
+    border-radius: 50px;
+    border: 3px solid rgb(227, 152, 152);
+    padding: 30px;
+}
+.contentnew__content__posts__main__img{
+    width: 800px;
+    height: 600px;
+    border-radius: 20px;
+    margin-top: 25px;
+}
+.contentnew__content__posts__new__bv__date{
+    width: 38%;
+    padding: 6px;
+    border: 3px solid rgb(221, 193, 140);
+    margin-top: 5px;
+    margin-left: 180px;
+    border-radius: 5px;
+}
+.contentnew__content__posts__new{
+    width: 28%;
+    height: 500px;
+    background-color: white;
+    margin-left: 15px;
+    border-radius: 20px;
+    padding: 10px;
+}
+.contentnew__content__posts__new p{
+    font-size: 12px;
+}
+.contentnew__content__posts__new a{
+    font-weight: normal !important;
+}
+.contentnew__content__posts__new__bv{
+    width: calc(100% - 10px);
+    margin-top: 15px;
+    height: auto;
+    padding: 8px;
+    border: 3px solid rgb(142, 156, 193);
+    border-radius: 20px;
+}
