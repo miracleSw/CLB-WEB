@@ -97,3 +97,32 @@
     border: 3px solid rgb(142, 156, 193);
     border-radius: 20px;
 }
+.contentnew__content__posts__article{
+    width: 70%;
+    height: auto;
+    background-color: white;
+    border-radius: 50px;
+    border: 3px solid rgb(227, 152, 152);
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 49% 49%;
+    
+}
+.contentnew__content__posts__article__main__img{
+    width: 350px;
+    height: 400px;
+    object-fit: cover;
+}
+.contentnew__content__posts__article__main{
+    margin-left: 25px;
+    margin-bottom: 30px;
+    margin-right: 10px;
+}
+.contentnew__content__posts__article_button{
+    width: 200px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    left: 200px;
+}
