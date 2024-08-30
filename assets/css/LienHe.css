@@ -342,10 +342,9 @@ ol, ul {
     flex-wrap: wrap;
     align-items: center;
     font-size: 13px;
-    line-height: 24px;
+    line-height: 44px;
     width: 1200px;
 }
-
 .user-icons img {
     width: 24px;
     margin-left: 20px;
@@ -357,13 +356,16 @@ ol, ul {
     padding: 50px 0;
     background-color: white;
 }
+.contentnew__navbar{
+    width: 20%;
+}
 
 .contact-info, .contact-form {
     width: 45%;
 }
 
 .contact-info h2, .contact-form h2 {
-    color: #001f60;
+    color:#003056;
     margin-bottom: 20px;
 }
 
@@ -396,9 +398,12 @@ ol, ul {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
+textarea{
+    min-height: 80px;
+}
 
 .contact-form button {
-    background-color: #00bfff;
+    background-color: #003056;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -408,16 +413,16 @@ ol, ul {
 }
 
 .contact-form button:hover {
-    background-color: #008fcc;
+    background-color: #028dff;
 }
 
 .update-info {
     text-align: right;
+    padding-bottom: 20px;
 }
 .entire-map {
     position: relative;
     padding-top: 36.45%;
-    margin-top: 24px;
 }
 .entire-map iframe {
     position: absolute;
@@ -429,3 +434,4 @@ ol, ul {
     width: 100%;
     object-fit: cover;
 }
+/* new update */
