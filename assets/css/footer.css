@@ -1,31 +1,61 @@
-.all .footer{
-    width: 100%;
-    position: relative;
-    min-height: 200px;
-    border: 3px solid black;
-    border-radius: 50px;
-    margin-top: 80px;
-    display: flex;
-    flex-wrap: wrap;
+* {
+   font-family: sans-serif;
+   
+   margin: 0;
+   padding: 0;
 }
- .all .footer .logocntt,
- .all .footer .contract,
- .all .footer .ttlh{
-    display: block;
-    margin: auto;
-    width: 300px;
-    height: 90px;
-    border: 3px solid black;
-    border-radius: 50px;
- }
- .all .footer .line{
-    width: 90%;
-    margin: 0px auto auto auto;
-    border: 5px solid gray;
- }
- .all .footer .copyright{
-    display: block;
-    width: 90%;
-    margin: 0px auto auto auto;
-    font-size: 30px;
- }
+
+
+body {
+   background-color: #f4f6f8;
+   color: #333333;
+}
+
+
+a {
+   text-decoration: none;
+   color: #333333;
+   font-weight: bold;
+}
+
+a:hover {
+   opacity: 0.6;
+}
+
+ol, ul {
+   list-style: none;
+}
+
+ .footer {
+   background-color: #fff;
+   min-height: 160px;
+
+}
+
+.footer--content {
+   max-width: 1200px;
+   padding-top: 30px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   margin:auto;
+}
+
+.connect {
+   display: flex;
+   padding: 2px 0px;
+}
+
+.footer__contact, .footer__connect{
+   margin: 10px;
+}
+.logo {
+   display: flex;
+}
+
+.logo--text {
+   position: relative;
+   padding: 14px 0px;
+   padding-left: 10px;
+}

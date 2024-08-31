@@ -35,7 +35,7 @@
     line-height: 200px;
     text-align: center;
 }
-.all .main .leftbar .ThongTin{
+.all .main .leftbar .TinTuc{
     width: 80%;
     display: block;
     border: 3px solid black;
@@ -43,7 +43,7 @@
     margin: 30px auto 30px auto; 
 }
 
-.all .main .leftbar .ThongTin .blocktt{
+.all .main .leftbar .TinTuc .blocktt{
     display: block;
     width: 100%;
     height: 150px;
@@ -53,14 +53,14 @@
     text-align: center;
 }
 
-.all .main .leftbar .ThongTin .ndthongtin{
+.all .main .leftbar .TinTuc .ndthongtin{
     display: block;
     width: 100%;
     height: 600px;
     margin: 20px auto 20px auto;
 }
 
-.all .main .leftbar .ThongTin .ndthongtin label{
+.all .main .leftbar .TinTuc .ndthongtin label{
     display: block;
     padding: 40px 10px 40px 10px;
     border: 3px solid black;
@@ -87,9 +87,8 @@
 }
 
 
-.all .main .rightbar .ThongTinChung,
-.all .main .rightbar .ToChucDieuHanh,
-.all .main .rightbar .CacHoatDong{
+.all .main .rightbar .BaiViet,
+.all .main .rightbar .Listbv{
     position:relative;
     overflow:hidden;
     display: none;
@@ -99,79 +98,68 @@
     transition: opacity 0.6s;
    
 }
-.all .main input.tab1:checked ~ .leftbar .ThongTin .ndthongtin .tab-label-1,
-.all .main input.tab2:checked ~ .leftbar .ThongTin .ndthongtin .tab-label-2,
-.all .main input.tab3:checked ~ .leftbar .ThongTin .ndthongtin .tab-label-3{
+.all .main input.tab1:checked ~ .leftbar .TinTuc .ndthongtin .tab-label-1,
+.all .main input.tab2:checked ~ .leftbar .TinTuc .ndthongtin .tab-label-2{
     background: rosybrown;
     z-index:6; 
 }
 
-input.tab1:checked ~ .rightbar .ThongTinChung,
-input.tab2:checked ~ .rightbar .ToChucDieuHanh,
-input.tab3:checked ~ .rightbar .CacHoatDong{
+input.tab1:checked ~ .rightbar .BaiViet,
+input.tab2:checked ~ .rightbar .Listbv{
     display: block;
     opacity: 1;
     z-index: 100 !important;
 }
 
 
-.picture{
-   display: flex;
-   overflow: hidden;
-   width: 97%;
-   height: 400px;
-   margin-top: 30px;
-   margin-left: 10px;
-   margin-bottom: 30px;
-   border-radius: 50px;
-   border: 2px solid black;
-   position: relative;
+.all{
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 1000px;
 }
 
-.his-tittle{
+.all .main{
+    
+   
     width: 100%;
-    background-color: azure;
-    min-height: 200px;
-    padding-bottom: 30px;
+    
+    display: flex;
+    
+    margin-bottom: 60px;
 }
-.box-his{
+input{
+    display: none;
+}
+label{
+    display: none;
+}
+.rightbar{
     width: 80%;
+    background-color: #fff;
     margin: auto;
-    border-radius: 50px;
-    overflow: hidden;
-    background-color: white;
-    font-size: 20px;
-    padding: 30px;
 }
-.mucdich{
-    width: 100%;
-    background-color: azure;
-    min-height: 200px;
-    padding-bottom: 30px;
-}
-.box-mucdich{
-    width: 80%;
+
+.contentnew__content__posts__article{
+    display: flex;
+    flex-direction: column;
     margin: auto;
-    border-radius: 50px;
-    overflow: hidden;
-    background-color: white;
-    font-size: 20px;
-    padding: 30px;
 }
-.time-active{
-    width: 100%;
-    background-color: azure;
-    min-height: 200px;
-    padding-bottom: 30px;
+
+.contentnew__content__posts__article__main a{
+    display: flex;
+    width: 90%;
+    height: 200px;
+    margin: 20px auto;
+    border-bottom: 2px solid black;
 }
-.box-active{
-    width: 80%;
-    margin: auto;
-    border-radius: 50px;
-    overflow: hidden;
-    background-color: white;
+.contentnew__content__posts__article__main a img{
+    width: 200px;
+    object-fit: cover;
+}
+.contentnew__content__posts__article__main a p{
     font-size: 20px;
-    padding: 30px;
+    margin-left: 20px;
 }
 .btmenu{
     display: none;
@@ -185,7 +173,48 @@ input.tab3:checked ~ .rightbar .CacHoatDong{
     z-index: 1000;
     cursor: pointer;
 }
+.BaiViet{
+    margin: 30px auto;
+}
+.contentnew__content__posts{
+    width: 80%;
+    margin: auto;
+}
+.contentnew__content__posts__main img{
+    margin-top: 30px;
+    width: 100%;
+}
 @media (max-width:1230px){
+    .rightbar{
+        width: 100% !important;
+    }
+    .contentnew__content__posts{
+        width: 90%;
+        margin: auto;
+    }
+    .rightbar h1{
+        width: 90%;
+
+        margin: auto !important;
+        font-size: 25px;
+    }
+    .contentnew__content__posts__main h1{
+        width: 100% !important;
+    }
+    .contentnew__content__posts__article__main a{
+        display: flex;
+        width: 90%;
+        height: 100px;
+        margin: 20px auto;
+    }
+    .contentnew__content__posts__article__main a img{
+        width: 100px;
+        object-fit: cover;
+    }
+    .contentnew__content__posts__article__main a p{
+        font-size: 15px;
+        margin-left: 20px;
+    }
     .all .main .leftbar{
         display: none !important;
     
@@ -193,9 +222,6 @@ input.tab3:checked ~ .rightbar .CacHoatDong{
         width: 15%;
         margin: 30px;
     
-    }
-    .rightbar{
-        width: 100% !important;
     }
     .btmenu{
         display: block;
@@ -223,7 +249,7 @@ input.tab3:checked ~ .rightbar .CacHoatDong{
         line-height: 200px;
         text-align: center;
     }
-    .all .main .leftbar .ThongTin{
+    .all .main .leftbar .TinTuc{
         width: 100%;
         display: block;
         border: none;
@@ -232,7 +258,7 @@ input.tab3:checked ~ .rightbar .CacHoatDong{
         margin-top: -120px; 
     }
     
-    .all .main .leftbar .ThongTin .blocktt{
+    .all .main .leftbar .TinTuc .blocktt{
         display: block;
         width: 100%;
         height: 150px;
@@ -242,14 +268,14 @@ input.tab3:checked ~ .rightbar .CacHoatDong{
         text-align: center;
     }
     
-    .all .main .leftbar .ThongTin .ndthongtin{
+    .all .main .leftbar .TinTuc .ndthongtin{
         display: block;
         width: 100%;
         height: 600px;
         margin: 20px auto 20px auto;
     }
     
-    .all .main .leftbar .ThongTin .ndthongtin label{
+    .all .main .leftbar .TinTuc .ndthongtin label{
         display: block;
         padding: 40px 10px 40px 10px;
         border: 3px solid black;
@@ -259,18 +285,4 @@ input.tab3:checked ~ .rightbar .CacHoatDong{
         text-align: center;
         cursor: pointer;
     }
-    .ThongTinChung h1{
-        font-size: 20px;
-        margin: auto !important;
-        width: 80% !important;
-    }
-    .ThongTinChung p{
-        font-size: 17px;
-    }
-    .picture{
-        height: 300px;
-        border: none;
-    }
-
 }
-
