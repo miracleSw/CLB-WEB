@@ -1,0 +1,122 @@
+.breadcrumbs-section {
+    display: flex;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 13px;
+    line-height: 44px;
+    width: 100%;
+}
+.user-icons img {
+    width: 24px;
+    margin-left: 20px;
+}
+
+.contact-section {
+    width: 100%;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    padding: 20px 0;
+    background-color: #f4f6f8;
+}
+.contentnew__navbar{
+    width: 20%;
+}
+
+.contact-info, .contact-form {
+    width: 45%;
+}
+
+.contact-info h2, .contact-form h2 {
+    color:#003056;
+    margin-bottom: 20px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info img {
+    width: 24px;
+    margin-right: 10px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+textarea{
+    min-height: 80px;
+}
+
+.contact-form button {
+    background-color: #003056;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: #028dff;
+}
+
+.update-info {
+    text-align: right;
+    padding-bottom: 20px;
+}
+.entire-map {
+    position: relative;
+    padding-top: 36.45%;
+}
+.entire-map iframe {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+@media (max-width:1200px){
+    .contact-section {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        padding: 20px 0;
+        background-color: white;
+        width: 100%;
+    }
+    .contact-info{
+        width: 90%;
+        margin: auto;
+    }
+    .contact-form{
+        margin: auto;
+        width: 90%;
+    }
+}
+
+.contact-text {
+    color: #003056;
+}
