@@ -3,59 +3,61 @@
     margin: 0 auto;
 }
 
-.all .main input{
+.all .main input {
     left: 0;
     top: 0;
-   
+
     display: none;
 }
 
 .all .main .rightbar .ThongTinChung,
 .all .main .rightbar .ToChucDieuHanh,
-.all .main .rightbar .CacHoatDong{
-    position:relative;
-    overflow:hidden;
+.all .main .rightbar .CacHoatDong {
+    position: relative;
+    overflow: hidden;
     display: none;
-    opacity:0;
+    opacity: 0;
     width: 98%;
     min-height: 1100px;
     transition: opacity 0.6s;
-   
-}
-.all .main input.tab1:checked ~ .leftbar .ThongTin .ndthongtin .tab-label-1,
-.all .main input.tab2:checked ~ .leftbar .ThongTin .ndthongtin .tab-label-2,
-.all .main input.tab3:checked ~ .leftbar .ThongTin .ndthongtin .tab-label-3{
-    background: rosybrown;
-    z-index:6; 
+
 }
 
-input.tab1:checked ~ .rightbar .ThongTinChung,
-input.tab2:checked ~ .rightbar .ToChucDieuHanh,
-input.tab3:checked ~ .rightbar .CacHoatDong{
+.all .main input.tab1:checked~.leftbar .ThongTin .ndthongtin .tab-label-1,
+.all .main input.tab2:checked~.leftbar .ThongTin .ndthongtin .tab-label-2,
+.all .main input.tab3:checked~.leftbar .ThongTin .ndthongtin .tab-label-3 {
+    background: rosybrown;
+    z-index: 6;
+}
+
+input.tab1:checked~.rightbar .ThongTinChung,
+input.tab2:checked~.rightbar .ToChucDieuHanh,
+input.tab3:checked~.rightbar .CacHoatDong {
     display: block;
     opacity: 1;
     z-index: 100 !important;
 }
 
 
-.picture{
-   display: flex;
-   overflow: hidden;
-   height: 400px;
-   margin-top: 30px;
-   margin-left: 10px;
-   margin-bottom: 30px;
-   border-radius: 50px;
-   border: 2px solid black;
-   position: relative;
+.picture {
+    display: flex;
+    overflow: hidden;
+    height: 400px;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    border-radius: 50px;
+    border: 2px solid black;
+    position: relative;
 }
 
-.his-tittle{
+.his-tittle {
     width: 100%;
     min-height: 200px;
     padding-bottom: 30px;
 }
-.box-his{
+
+.box-his {
     width: 80%;
     margin: 0 auto;
     border-radius: 50px;
@@ -63,12 +65,14 @@ input.tab3:checked ~ .rightbar .CacHoatDong{
     font-size: 20px;
     padding: 30px;
 }
-.mucdich{
+
+.mucdich {
     width: 100%;
     min-height: 200px;
     padding-bottom: 30px;
 }
-.box-mucdich{
+
+.box-mucdich {
     width: 80%;
     margin: auto;
     border-radius: 50px;
@@ -76,12 +80,14 @@ input.tab3:checked ~ .rightbar .CacHoatDong{
     font-size: 20px;
     padding: 30px;
 }
-.time-active{
+
+.time-active {
     width: 100%;
     min-height: 200px;
     padding-bottom: 30px;
 }
-.box-active{
+
+.box-active {
     width: 80%;
     margin: auto;
     border-radius: 50px;
@@ -89,7 +95,8 @@ input.tab3:checked ~ .rightbar .CacHoatDong{
     font-size: 20px;
     padding: 30px;
 }
-.btmenu{
+
+.btmenu {
     display: none;
     right: 1%;
     width: 50px;
@@ -101,36 +108,41 @@ input.tab3:checked ~ .rightbar .CacHoatDong{
     z-index: 1000;
     cursor: pointer;
 }
-@media (max-width:1230px){
-    .all .main .leftbar{
+
+@media (max-width:1230px) {
+    .all .main .leftbar {
         display: none !important;
-    
+
         flex-direction: column;
         width: 15%;
         margin: 30px;
-    
+
     }
-    .rightbar{
+
+    .rightbar {
         width: 100% !important;
     }
-    .btmenu{
+
+    .btmenu {
         display: block;
     }
-    input.check1:checked ~ .leftbar {
+
+    input.check1:checked~.leftbar {
         display: block !important;
         position: fixed;
         z-index: 1000;
-        top:0;
+        top: 0;
         margin-top: 0px;
         margin-left: 0px;
-        width: 50%; 
+        width: 50%;
         background-color: #fff;
     }
-    .all .main .leftbar .TrangChu{
-   
+
+    .all .main .leftbar .TrangChu {
+
         display: block;
         width: 100%;
-       border-bottom: 2px solid black !important;
+        border-bottom: 2px solid black !important;
         padding: 0;
         margin-top: -40px;
         border-radius: 0px;
@@ -139,16 +151,17 @@ input.tab3:checked ~ .rightbar .CacHoatDong{
         line-height: 200px;
         text-align: center;
     }
-    .all .main .leftbar .ThongTin{
+
+    .all .main .leftbar .ThongTin {
         width: 100%;
         display: block;
         border: none;
         border-radius: 0px;
         margin: 0;
-        margin-top: -120px; 
+        margin-top: -120px;
     }
-    
-    .all .main .leftbar .ThongTin .blocktt{
+
+    .all .main .leftbar .ThongTin .blocktt {
         display: block;
         width: 100%;
         height: 150px;
@@ -157,15 +170,15 @@ input.tab3:checked ~ .rightbar .CacHoatDong{
         line-height: 150px;
         text-align: center;
     }
-    
-    .all .main .leftbar .ThongTin .ndthongtin{
+
+    .all .main .leftbar .ThongTin .ndthongtin {
         display: block;
         width: 100%;
         height: 600px;
         margin: 20px auto 20px auto;
     }
-    
-    .all .main .leftbar .ThongTin .ndthongtin label{
+
+    .all .main .leftbar .ThongTin .ndthongtin label {
         display: block;
         padding: 40px 10px 40px 10px;
         border: 3px solid black;
@@ -175,15 +188,18 @@ input.tab3:checked ~ .rightbar .CacHoatDong{
         text-align: center;
         cursor: pointer;
     }
-    .ThongTinChung h1{
+
+    .ThongTinChung h1 {
         font-size: 20px;
         margin: auto !important;
         width: 80% !important;
     }
-    .ThongTinChung p{
+
+    .ThongTinChung p {
         font-size: 17px;
     }
-    .picture{
+
+    .picture {
         height: 300px;
         border: none;
     }
@@ -196,4 +212,3 @@ input.tab3:checked ~ .rightbar .CacHoatDong{
     background-color: gray;
     color: gray;
 }
-
