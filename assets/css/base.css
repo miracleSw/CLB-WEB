@@ -57,16 +57,6 @@ ol, ul {
     padding: 14px 0px;
     padding-left: 10px;
 }
-@media (max-width: 840px){
-    .navbar{display: none;}
-    .logo{
-        align-items: center;
-        margin: auto;
-    }
-    .logo--text {
-        font-size: 15px;
-    }
-}
 
 .navbar__list {
     display: flex;
@@ -96,7 +86,7 @@ ol, ul {
     margin: 0;
     margin-top: 8px;
     padding: 4px 0px;
-    z-index: 999;
+    z-index: 2;
 }
 
 .sub--navbar__item {
@@ -108,6 +98,94 @@ ol, ul {
 .navbar__item:hover ul {
     display: block;
 }
+
+
+/* Navbar mobile */
+
+.nav__mobile--btn {
+    position: absolute;
+    font-size: 60px;
+    color: #333333;
+    right: 4vh;
+    top: 28px;
+    display: none;
+}
+
+.nav__overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+.nav__mobile {
+    position: fixed;
+    top: 0px;
+    right: 0;
+    bottom: 0;
+    width: 320px;
+    max-width: 100%;
+    background-color: #fff;
+    transform: translateX(100%);
+    z-index: 3;
+    border-radius: 24px 0px 0px 24px;
+    transition: all ease 0.3s;
+    opacity: 0;
+}
+
+.nav__input:checked ~ .nav__overlay {
+    display: block;
+}
+
+.nav__input:checked ~ .nav__mobile {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.navbar__mobile--list {
+    margin-top: 40px;
+}
+
+.navbar__mobile--item-link {
+    font-size: 28px;
+    color: #003056;
+    display: block;
+    padding: 10px 20px;
+}
+
+.sub--navbar__mobile--item {
+    font-size: 20px;
+    color: #333333;
+    display: block;
+    padding: 6px 32px 0px 32px;
+}
+
+.nav__mobile--close {
+    font-size: 40px;
+    position: fixed;
+    top: 40px;
+    right: 44px;
+    bottom: 0;
+}
+
+@media (max-width: 1023px) {
+    .nav__mobile--btn {
+        display: block;
+    }
+
+    .hide-mobile {
+        display: none;
+    }
+}
+
+
+
+/* End Navbar mobile */
+
 
 .footer {
     background-color: #fff;

@@ -57,9 +57,44 @@
         </div>
 
         <!-- Nav Mobile -->
-        <div class="nav mobile">
+        <nav>
+            
+            <input type="checkbox" hidden name="" class="nav__input" id="nav__mobile--input">
 
-        </div>
+            <label for="nav__mobile--input" class="nav__mobile--btn"><i class="fa-solid fa-bars"></i></label>
+            
+            <label for="nav__mobile--input" class="nav__overlay"></label>
+
+            <nav class="nav__mobile">
+                <label for="nav__mobile--input" class="nav__mobile--close">
+                    <i class="fa-solid fa-xmark"></i>
+                </label>
+                <ul class="navbar__mobile--list">
+                    <li class="navbar__mobile--item">
+                        <a href="introduct.html" class="navbar__mobile--item-link" style="width: 206px;">Giới thiệu
+                            <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                        <ul class="sub--navbar__mobile--list">
+                            <li class="sub--navbar__mobile--item"><a href="introduct.html">Thông tin chung</a></li>
+                            <li class="sub--navbar__mobile--item"><a href="organization.html">Tổ chức</a></li>
+                            <li class="sub--navbar__mobile--item"><a href="activity.html">Các hoạt động</a></li>
+                        </ul>
+                    </li>
+                    <li class="navbar__mobile--item">
+                        <a href="news.html" class="navbar__mobile--item-link">Tin tức, sự kiện
+                            <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                        <ul class="sub--navbar__mobile--list">
+                            <li class="sub--navbar__mobile--item"><a href="news.html">Tin tức</a></li>
+                            <li class="sub--navbar__mobile--item"><a href="event.html">Sự kiện</a></li>
+                        </ul>
+                    </li>
+                    <li class="navbar__mobile--item">
+                        <a href="lh.html" class="navbar__mobile--item-link">Liên hệ</a>
+                    </li>
+                </ul>
+            </nav>
+        </nav>
         <!-- End Nav Mobile -->
 
     </header>
