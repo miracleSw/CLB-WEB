@@ -133,3 +133,11 @@ ol, ul {
 .footer__contact, .footer__connect{
     margin: 10px;
 }
+
+.text--body__main {
+    margin: 10px 0px 10px 30px;
+    line-height: 40px;
+    padding: 12px 0px;
+    color: #003056;
+    font-size: 30px !important;
+}

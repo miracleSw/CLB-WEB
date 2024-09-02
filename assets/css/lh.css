@@ -17,7 +17,7 @@
     display: flex;
     margin: auto;
     justify-content: space-around;
-    padding: 20px 0;
+    padding-bottom: 20px;
     background-color: #f4f6f8;
 }
 .contentnew__navbar{
@@ -119,4 +119,9 @@ textarea{
 
 .contact-text {
     color: #003056;
+}
+
+.body--header {
+    width: 1200px;
+    margin: 0 auto;
 }
