@@ -233,13 +233,11 @@
 }
 
 .box__intro {
-    border: 1px solid #333333;
-    border-radius: 12px;
+    border-radius: 12px 0px;
     margin: 0 auto;
     padding: 16px;
     max-width: 500px;
-    min-height: 290px;
-    background-color: #ccc;
+    background-color: #e7e7e7;
     
 }
 
