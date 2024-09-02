@@ -1,5 +1,5 @@
 .slide-show {
-    width: 80%;
+    width: 1600px;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
@@ -105,13 +105,11 @@
 .news__item {
     display: flex;
     flex-wrap: wrap;
-    width: 95%;
-    margin: auto;
 }
 
 .box-news {
     width: 425px;
-    height: 350px;
+    height: 300px;
     padding: 20px;
     margin: auto;
     background-color: #fff;
@@ -157,7 +155,6 @@
 .body--intro{
     display: flex;
     flex-wrap: wrap ;
-    width: 70%;
 }
 .body__event {
     margin-top: 40px;
@@ -231,16 +228,16 @@
     margin: auto;
     flex-grow: 1;
     background-color: #fff;
+    border-radius: 0px 48px 0px 48px;
+    box-shadow: 1px 2px 0px 2px gray;
 }
 
 .box__intro {
-    border: 1px solid #333333;
-    border-radius: 12px;
+    border-radius: 12px 0px;
     margin: 0 auto;
     padding: 16px;
     max-width: 500px;
-    min-height: 290px;
-    background-color: #ccc;
+    background-color: #e7e7e7;
     
 }
 
@@ -267,4 +264,9 @@
     position: relative;
     height: 32px;
     margin: 12px;
+}
+
+.body__news {
+    width: 1400px;
+    margin: 0 auto;
 }

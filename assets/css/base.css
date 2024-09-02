@@ -141,3 +141,8 @@ ol, ul {
     color: #003056;
     font-size: 30px !important;
 }
+
+.body--header {
+    width: 1200px;
+    margin: 0 auto;
+}
