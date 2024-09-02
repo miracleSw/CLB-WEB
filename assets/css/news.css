@@ -1,0 +1,31 @@
+.news--img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.news__item {
+    width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 24px;
+}
+
+.box-news {
+    width: 440px;
+    height: 300px;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+.news--link h4{
+    padding: 8px 4px;
+}
+
+.news--time {
+    padding: 0px 4px;
+    color: #b3b3b3;
+    font-size: 18px;
+}

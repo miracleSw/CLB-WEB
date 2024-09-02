@@ -1,0 +1,19 @@
+.body__info {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.text--info {
+    display: block;
+    font-size: 18px;
+    text-align: justify;
+    padding-bottom: 12px;
+}
+
+.body__img {
+    max-width: 1024px;
+    max-height: 768px;
+    margin: 0 auto;
+    object-fit: cover;
+    padding: 12px 0px 24px 0px;
+}
