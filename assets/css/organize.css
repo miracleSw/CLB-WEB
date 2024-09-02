@@ -1,12 +1,9 @@
-*{
-    box-sizing: border-box;
-}
 .body--header {
-    width: 100%;
+    width: 1200px;
     margin: 0 auto;
 }
 
-.text--body__main__org {
+.text--body__main {
     margin: 10px 0px 10px 30px;
     line-height: 40px;
     padding: 12px 0px;
@@ -15,7 +12,7 @@
 }
 
 .body--content {
-    width: 100%;
+    width: 1552px;
     margin: 0 auto;
 }
 
@@ -42,7 +39,7 @@
 
 .member__img {
     object-fit: cover;
-    width: 100%;
+    width: 348px;
     height: 500px;
     transition: all ease 0.3s;
 }
@@ -56,7 +53,6 @@
 
 .member {
     margin: 24px 0px 32px 0px;
-    width: 20%;
 }
 
 .member:hover {
@@ -64,15 +60,73 @@
 }
 
 .member__body {
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    gap: 48px;
     margin: auto;
-    
+    gap: 48px;
     justify-content: space-evenly;
 }
 
 .advisor {
     width: 460px;
+}
+
+/* Moblie */
+@media only screen and (max-width: 46.1875em){
+    .member__body{
+        flex-direction: column;
+    }
+    .member{
+        width: 95%;
+        margin-bottom: 8px;
+        margin-left: 12px;
+    
+    }
+    .text--body__main{
+        font-size: 18px;
+        text-align: center;
+        margin: 0;
+    }
+    .member__body {
+        gap: 0;
+    }
+    .title__body h2{
+        font-size: 18px;
+    }
+    .bcn{
+        width: 230px;
+        border-radius: 15px 15px 15px 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .member__img{
+        width: 95%;
+        height: 450px;
+    }
+    .advisor{
+        width: 300px;
+        border-radius: 15px 15px 15px 15px;
+        margin: 0;
+       
+    }
+    .member__text{
+        font-size: 18px;
+    }
+    .advisor{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/*Tablet*/
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em){
+    .member{
+        width: 45%;
+    }
+    .member__body{
+        gap: 0;
+    }
+    .member__text{
+        font-size: 18px;
+    }
 }
