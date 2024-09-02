@@ -70,3 +70,63 @@
 .advisor {
     width: 460px;
 }
+
+/* Moblie */
+@media only screen and (max-width: 46.1875em){
+    .member__body{
+        flex-direction: column;
+    }
+    .member{
+        width: 95%;
+        margin-bottom: 8px;
+        margin-left: 12px;
+    
+    }
+    .text--body__main__org{
+        font-size: 18px;
+        text-align: center;
+        margin: 0;
+    }
+    .member__body {
+        gap: 0;
+    }
+    .title__body h2{
+        font-size: 18px;
+    }
+    .bcn{
+        width: 230px;
+        border-radius: 15px 15px 15px 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .member__img{
+        width: 95%;
+        height: 450px;
+    }
+    .advisor{
+        width: 300px;
+        border-radius: 15px 15px 15px 15px;
+        margin: 0;
+       
+    }
+    .member__text{
+        font-size: 18px;
+    }
+    .advisor{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/*Tablet*/
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em){
+    .member{
+        width: 45%;
+    }
+    .member__body{
+        gap: 0;
+    }
+    .member__text{
+        font-size: 18px;
+    }
+}
