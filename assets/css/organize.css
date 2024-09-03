@@ -83,6 +83,11 @@
         width: 320px;
     }
 
+    .title--body {
+        font-size: 20px;
+        margin: 12px 16px;
+    }
+
     .member__img {
         width: 300px;
         height: 450px;
@@ -90,11 +95,6 @@
 }
 
 @media screen and (max-width: 768px) {
-    .body--header {
-        width: 100%;
-        padding: 0 10px;
-    }
-
     .body--content {
         width: 100%;
         padding: 0 10px;
@@ -105,26 +105,4 @@
         margin: 10px 0px;
     }
 
-    .title--body {
-        font-size: 24px;
-        margin: 12px 16px;
-    }
-
-    .member__body {
-        flex-direction: column;
-        gap: 16px;
-        padding: 0px 20px;
-    }
-
-    .bcn, .advisor {
-        width: 100%;
-    }
-
-    .member__img {
-        width: 100%;
-    }
-
-    .member__text {
-        font-size: 12px;
-    }
 }

@@ -193,6 +193,10 @@ textarea{
 
 /* Responsive */
 @media (max-width:1200px){
+    .body--header {
+        width: 100%;
+        padding: 0 20px;
+    }
     .contact-section {
         display: flex;
         justify-content: space-around;
@@ -226,12 +230,6 @@ textarea{
     .update-info {
         text-align: center;
         padding-bottom: 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    .contact-info h2, .contact-form h2 {
-        margin-bottom: 30px;
     }
 }
 

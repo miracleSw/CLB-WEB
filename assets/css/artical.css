@@ -44,16 +44,4 @@
     }
 }
 
-@media screen and (max-width: 480px) {
-    .text--info {
-        font-size: 14px;
-        padding-bottom: 8px;
-    }
-
-    .body__img {
-        max-width: 100%;
-        padding: 20px;
-    }
-}
-
 /* End Responsive */

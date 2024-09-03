@@ -50,6 +50,7 @@
     }
 
     .box-news {
+        max-width: 480px;
         width: 100%;
         margin-bottom: 20px;
     }
