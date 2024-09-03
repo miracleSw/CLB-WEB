@@ -32,10 +32,11 @@
     transform: 0.5s ease;
     cursor: pointer;
     padding: 0px 16px;
+    opacity: 0.5;
 }
 
 .btn:hover {
-    opacity: 0.5;
+    opacity: 1;
     background-color: #cccccc67;
 } 
 
