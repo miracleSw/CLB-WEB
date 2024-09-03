@@ -1,52 +1,39 @@
-const  listImage = document.querySelector('.list-images')
-const imgs = document.getElementsByClassName('slide__img')
-const length = imgs.length
-const btnL = document.querySelector('.btn-left')
-const btnR = document.querySelector('.btn-right')
+const imgs = document.querySelectorAll('.slide__img');
+const length = imgs.length;
+const btnL = document.querySelector('.btn-left');
+const btnR = document.querySelector('.btn-right');
+let cur = 0;
 
-let cur = 0, prev = 0
+const showSlide = (index) => {
+    imgs.forEach((img, i) => {
+        img.style.display = (i === index) ? 'block' : 'none';
+    });
+    document.querySelector('.index-active').classList.remove('index-active');
+    document.querySelector('.index-item-' + index).classList.add('index-active');
+};
 
 const handleChangeSlide = () => {
-    if(cur == length - 1){
-        prev = 1
-        cur = 0
-    }
-    else if (cur == 1 && prev == 1){
-        prev = 0
-        cur = -1
-    }
-    cur++
-    let width = imgs[0].offsetWidth
-    listImage.style.transform = `translateX(${width * -1 * cur}px)`
-    document.querySelector('.index-active').classList.remove('index-active')
-    document.querySelector('.index-item-' + cur).classList.add('index-active')
-}
+    cur = (cur + 1) % length;
+    showSlide(cur);
+};
 
-// setInterval(handleChangeSlide, 4000)
+const handlePrevSlide = () => {
+    cur = (cur - 1 + length) % length;
+    showSlide(cur);
+};
 
-let handleEventChangeSlide = setInterval(handleChangeSlide, 5000)
+let handleEventChangeSlide = setInterval(handleChangeSlide, 5000);
 
 btnR.addEventListener('click', () => {
-    clearInterval(handleEventChangeSlide)
-    if(cur == length - 1){
-        cur = -1
-    }
-    cur++
-    let width = imgs[0].offsetWidth
-    listImage.style.transform = `translateX(${width * -1 * cur}px)`
-    handleEventChangeSlide = setInterval(handleChangeSlide, 5000)
-    document.querySelector('.index-active').classList.remove('index-active')
-    document.querySelector('.index-item-' + cur).classList.add('index-active')
-})
+    clearInterval(handleEventChangeSlide);
+    handleChangeSlide();
+    handleEventChangeSlide = setInterval(handleChangeSlide, 5000);
+});
 
 btnL.addEventListener('click', () => {
-    clearInterval(handleEventChangeSlide)
-    if(cur == 0) cur = length
-    cur--
-    let width = imgs[0].offsetWidth
-    listImage.style.transform = `translateX(${width * -1 * cur}px)`
-    handleEventChangeSlide = setInterval(handleChangeSlide, 5000)
-    document.querySelector('.index-active').classList.remove('index-active')
-    document.querySelector('.index-item-' + cur).classList.add('index-active')
-})
+    clearInterval(handleEventChangeSlide);
+    handlePrevSlide();
+    handleEventChangeSlide = setInterval(handleChangeSlide, 5000);
+});
 
+showSlide(cur);

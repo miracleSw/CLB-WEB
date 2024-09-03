@@ -3,14 +3,6 @@
     margin: 0 auto;
 }
 
-.text--body__main {
-    margin: 10px 0px 10px 30px;
-    line-height: 40px;
-    padding: 12px 0px;
-    color: #003056;
-    font-size: 38px;
-}
-
 .body--content {
     width: 1552px;
     margin: 0 auto;
@@ -71,62 +63,68 @@
     width: 460px;
 }
 
-/* Moblie */
-@media only screen and (max-width: 46.1875em){
-    .member__body{
-        flex-direction: column;
+@media screen and (max-width: 1200px) {
+    .body--header {
+        width: 100%;
+        padding: 0 20px;
     }
-    .member{
-        width: 95%;
-        margin-bottom: 8px;
-        margin-left: 12px;
-    
+
+    .body--content {
+        width: 100%;
+        padding: 0 20px;
     }
-    .text--body__main{
-        font-size: 18px;
-        text-align: center;
-        margin: 0;
-    }
+
     .member__body {
-        gap: 0;
+        gap: 24px;
+        padding: 0px 20px;
     }
-    .title__body h2{
-        font-size: 18px;
+
+    .bcn, .advisor {
+        width: 320px;
     }
-    .bcn{
-        width: 230px;
-        border-radius: 15px 15px 15px 15px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .member__img{
-        width: 95%;
-        height: 450px;
-    }
-    .advisor{
+
+    .member__img {
         width: 300px;
-        border-radius: 15px 15px 15px 15px;
-        margin: 0;
-       
-    }
-    .member__text{
-        font-size: 18px;
-    }
-    .advisor{
-        margin-left: auto;
-        margin-right: auto;
+        height: 450px;
     }
 }
 
-/*Tablet*/
-@media only screen and (min-width: 46.25em) and (max-width: 63.9375em){
-    .member{
-        width: 45%;
+@media screen and (max-width: 768px) {
+    .body--header {
+        width: 100%;
+        padding: 0 10px;
     }
-    .member__body{
-        gap: 0;
+
+    .body--content {
+        width: 100%;
+        padding: 0 10px;
     }
-    .member__text{
-        font-size: 18px;
+
+    .title__body {
+        height: 48px;
+        margin: 10px 0px;
+    }
+
+    .title--body {
+        font-size: 24px;
+        margin: 12px 16px;
+    }
+
+    .member__body {
+        flex-direction: column;
+        gap: 16px;
+        padding: 0px 20px;
+    }
+
+    .bcn, .advisor {
+        width: 100%;
+    }
+
+    .member__img {
+        width: 100%;
+    }
+
+    .member__text {
+        font-size: 12px;
     }
 }

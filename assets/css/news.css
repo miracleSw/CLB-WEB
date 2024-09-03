@@ -29,3 +29,36 @@
     color: #b3b3b3;
     font-size: 18px;
 }
+
+@media screen and (max-width: 1200px) {
+    .news__item {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .box-news {
+        width: 45%;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .news__item {
+        width: 100%;
+        padding: 0 10px;
+        flex-direction: column;
+    }
+
+    .box-news {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .news--img {
+        height: 200px;
+    }
+
+    .news--time {
+        font-size: 16px;
+    }
+}

@@ -12,8 +12,48 @@
 
 .body__img {
     max-width: 1024px;
-    max-height: 768px;
+    width: 100%;
+    height: auto;
     margin: 0 auto;
     object-fit: cover;
     padding: 12px 0px 24px 0px;
 }
+
+/* Responsive */
+
+@media screen and (max-width: 1200px) {
+    .body__info {
+        width: 95%;
+        padding: 0 20px;
+    }
+
+    .body__img {
+        max-width: 100%;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .text--info {
+        font-size: 16px;
+    }
+
+    .body__img {
+        max-width: 100%;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .text--info {
+        font-size: 14px;
+        padding-bottom: 8px;
+    }
+
+    .body__img {
+        max-width: 100%;
+        padding: 20px;
+    }
+}
+
+/* End Responsive */

@@ -46,3 +46,64 @@
 .font--activity i {
     padding-right: 12px;
 }
+
+/* Responsive */
+@media screen and (max-width: 1200px) {
+    .body--content {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .item--body__activity {
+        width: 90%;
+    }
+
+    .img__activity {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .describe--body__info {
+        font-size: 20px;
+    }
+
+    .font--activity {
+        font-size: 18px;
+        height: 40px;
+        padding-left: 20px;
+    }
+
+    .item--body__activity {
+        width: 100%;
+    }
+
+    .img__activity {
+        max-width: 100%;
+    }
+
+    .img--item__activity p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .describe--body__info {
+        font-size: 18px;
+    }
+
+    .font--activity {
+        font-size: 16px;
+        height: 36px;
+        padding-left: 16px;
+    }
+
+    .img__activity {
+        max-width: 100%;
+    }
+
+    .img--item__activity p {
+        font-size: 16px;
+    }
+}
+/* End Responsive */

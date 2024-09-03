@@ -1,5 +1,6 @@
 .slide-show {
-    width: 1600px;
+    width: 100vw;
+    height: 100vh;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
@@ -7,29 +8,21 @@
 
 .list-images {
     display: flex;
-    transition: all 0.7s ease;
+    width: 100%;
+    height: 100%;
 }
 
 .slide__img {
+    max-width: 100%;
     width: 100%;
-    height: 900px;
     object-fit: cover;
 }
-@media (max-width: 1400px)
-{
-    .slide__img {
-        width: 100%;
-        height: 100%;
-        object-fit: fill;
-        
-    }
-}
-
 
 .btn {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 6%;
     height: 100%;
     font-size: 100%;
     color: #ccc;
@@ -140,6 +133,7 @@
 }
 
 .box__event {
+    margin-bottom: 24px;
     width: 580px;
     height: 400px;
     background-color: #333333;
@@ -196,32 +190,6 @@
     flex-grow: 1;
     margin: auto;
 }
-@media (max-width:1400px){
-    .box__event {
-        width: 100%;
-        height: 100%;
-        background-color: #333333;
-        overflow: hidden;
-        position: relative;
-    }
-    .body--intro{
-        display: flex;
-        flex-wrap: wrap ;
-        width: 95%;
-    }
-    .btn--body__event {
-        margin: 0;
-        flex-grow: 1;
-        font-size: 17px;
-        
-    }
-    .text--body__news{
-        font-size: 25px;
-    }
-    .text--body__intro{
-        text-align: center;
-    }
-}
 
 .intro__item {
     display: block;
@@ -233,7 +201,7 @@
 }
 
 .box__intro {
-    border-radius: 12px 0px;
+    border-radius: 0px 24px;
     margin: 0 auto;
     padding: 16px;
     max-width: 500px;
@@ -270,3 +238,54 @@
     width: 1400px;
     margin: 0 auto;
 }
+
+/* Responsive */
+
+@media (max-width: 1200px) {
+    .slide__img {
+        height: unset;
+    }
+
+    .body__news {
+        width: 100%;
+    }
+
+    .box__event {
+        width: 100%;
+        height: auto;
+    }
+
+    .box__intro {
+        max-width: 1000px;
+        width: 90%;
+    }
+
+    .text--body__news {
+        font-size: 30px;
+    }
+
+    .text--body__intro {
+        font-size: 30px;
+    }
+
+    .btn--body__event {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .btns {
+        display: none;
+    }
+
+    .text--body__news {
+        font-size: 28px;
+    }
+
+    .text--body__intro {
+        font-size: 28px;
+    }
+}
+/* End Responsive */
