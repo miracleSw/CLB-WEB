@@ -10,6 +10,7 @@
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 24px;
+    margin-bottom: 36px;
 }
 
 .box-news {
@@ -17,7 +18,7 @@
     height: 300px;
     padding: 20px;
     margin: auto;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .news--link h4{
@@ -34,6 +35,14 @@
     .news__item {
         width: 100%;
         padding: 0 20px;
+    }
+
+    .news--title {
+        font-size: 14px;
+    }
+
+    .news--time {
+        font-size: 14px;
     }
 
     .box-news {
@@ -57,6 +66,10 @@
 
     .news--img {
         height: 200px;
+    }
+
+    .news--title {
+        font-size: 16px;
     }
 
     .news--time {

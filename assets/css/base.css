@@ -100,11 +100,7 @@ ol, ul {
 }
 
 .breadcrumbs-section {
-    display: flex;
-    flex: 1 1 auto;
-    flex-wrap: wrap;
-    align-items: center;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 44px;
     width: 100%;
 }
@@ -211,7 +207,7 @@ ol, ul {
     font-size: 20px;
     color: #333333;
     display: block;
-    padding: 6px 32px 0px 32px;
+    padding: 6px 32px;
 }
 
 .nav__mobile--close {
@@ -284,8 +280,6 @@ ol, ul {
 
     .breadcrumbs-section {
         width: 100%;
-        flex-direction: column;
-        align-items: flex-start;
         padding: 10px;
     }
 

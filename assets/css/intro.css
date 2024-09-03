@@ -70,6 +70,10 @@ input.tab3:checked~.rightbar .CacHoatDong {
     padding-bottom: 30px;
 }
 
+.box__main {
+    border-radius: 24px 0px;
+}
+
 .box-mucdich {
     width: 80%;
     margin: auto;
@@ -124,6 +128,22 @@ input.tab3:checked~.rightbar .CacHoatDong {
         width: 90%;
     }
 
+    .bottom-dash {
+        display: none;
+    }
+
+    .main--title {
+       margin: 0 auto !important;
+    }
+
+    .box__main {
+        height: 52px;
+        display: flex;
+        align-items: center;
+        margin: 0 auto; 
+        background-color: #ccc;
+    }
+
     .picture {
         height: 350px;
         margin-left: 5px;
@@ -160,15 +180,17 @@ input.tab3:checked~.rightbar .CacHoatDong {
         min-height: 150px;
     }
 
-    .bottom-dash {
-        display: none;
-    }
-
     .sub--title {
         font-size: 18px;
     }
 
     .main--title {
         font-size: 26px;
+        padding: 0px 24px;
+    }
+
+    .box__main {
+        max-width: max-content;
+        width: 100% !important;
     }
 }
