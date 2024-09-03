@@ -302,3 +302,9 @@ ol, ul {
 }
 
 /* End Navbar mobile & responsive */
+
+@media (max-width: 480px) {
+    .logo--text {
+        display: none;
+    }
+}
