@@ -241,6 +241,10 @@
 /* Responsive */
 
 @media (max-width: 1200px) {
+    .img--event {
+        object-fit: cover;
+    }
+    
     .body--intro {
         width: 100%;
         padding: 0px 28px;
