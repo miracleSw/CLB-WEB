@@ -273,11 +273,12 @@
     }
 
     .text--body__news {
-        font-size: 26px;
+        font-size: 34px;
+        padding-right: 24px;
     }
 
     .text--body__intro {
-        font-size: 28px;
+        font-size: 34px;
         text-align: start;
         margin: 24px;
         margin-bottom: 0px;
@@ -291,7 +292,8 @@
 
 @media (max-width: 768px) {
     .text--body__news {
-        font-size: 24px;
+        font-size: 30px;
+        padding-right: 14px;
     }
     .news--link h4 {
         font-size: 14px;
@@ -302,7 +304,7 @@
     }
 
     .text--body__intro {
-        font-size: 26px;
+        font-size: 32px;
     }
 
     .intro--link h4 {
