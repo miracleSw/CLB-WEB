@@ -10,6 +10,10 @@
     padding-bottom: 12px;
 }
 
+.text--body__main {
+    text-align: center;
+}
+
 .body__img {
     max-width: 1024px;
     width: 100%;
