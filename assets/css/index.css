@@ -250,6 +250,10 @@
         height: unset;
     }
 
+    .body__event {
+        justify-content: space-between;
+    }
+
     .body__news {
         width: 100%;
     }
@@ -277,14 +281,13 @@
 
     .btn--body__event {
         margin-left: 0;
-        width: 100%;
         text-align: center;
     }
 }
 
 @media (max-width: 768px) {
     .text--body__news {
-        font-size: 28px;
+        font-size: 26px;
     }
 
     .news--link h4 {
