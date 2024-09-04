@@ -242,7 +242,7 @@
 
 @media (max-width: 1200px) {
     .img--event {
-        object-fit: cover;
+        object-fit: cover !important;
     }
     
     .body--intro {
@@ -310,7 +310,7 @@
     }
 
     .img--event {
-        object-fit: unset;
+        object-fit: unset !important;
     }
 }
 /* End Responsive */
